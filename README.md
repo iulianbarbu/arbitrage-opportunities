@@ -39,3 +39,11 @@ for buying, selling, and managing digital assets. A few of the outstanding featu
 - use SwissBorg Exchange AI Portfolio Analytics to gain better insights into their portfolios (total fees spent, overall performance,
   personal ROI for unrealized/realized gains) and the tokens they are interested in, through features like Cyborg Predictor, SwissBorg
   Indicator, Community Sentiment, support and resistance).
+
+## How to run everything
+
+1. Install Rust and cargo.
+2. cd into the repo root directory.
+3. run `cargo run -- --url https://api.swissborg.io/v1/challenge/rates --trade-amount 100`
+4. to run tests you can use `cargo test`
+5. optionally, if you want to see debug log, run step 3 preceded by `RUST_LOG=debug`.
