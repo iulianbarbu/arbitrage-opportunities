@@ -11,10 +11,12 @@ the rates with 8 decimal precision, so each rate is represented in the graph as 
 The applied algorithm is Bellman-Ford who works well for determining minimum weighted paths in directed/undirected graphs
 with negative weights, and can also spot negative cycles, which is exactly what we're interested in. To be able to apply
 the algorithm on our graph of pairs rates we'll need to transform the raw data in the first place by applying
- `function(weight) = -1 * log2(weight)` on each edge weight, so that when we apply Bellman-Ford to find the minimum
-weighted path, which uses addition to relax the edges of the minimum weighted paths, we are actually computing the
-rates multiplication behind the scenes, which is the operation which represents the sequence of trades we'll want to explore
-which can result in profit.
+ `function(weight) = -1 * log2(weight)` on each edge weight. This is done because Bellman-Ford finds the minimum
+weighted path by adding the weights associated to the path edges, but in our case we're interested in multiplying the
+rates so that we simulate trade sequences that result in an arbitrage opportunity. The function previously mentioned
+realizes the multiplication by the virtue of the logarithms additions, which in practice are equivalent to powers of
+two multiplications, so the smaller the negative logarithm sums, the bigger the rates multiplications, and the bigger
+the chance of observing an arbitrage opportunity.
 
 **Time complexity** is [(V - 1) * V] * V, where V is the number of vertices. The theoretical time complexity of the algorithm is
 O(V * E) where V is the number of vertices and E the number of edges, but since the pairs rates form a complete multidigraph
