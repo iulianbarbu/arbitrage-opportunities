@@ -1,7 +1,7 @@
 # Arbitrage opportunity search
 
-The data we use here consists from exchange rates for pairs of tokens/currencies. This pairs represent relationships between
-the tokens and can be used as edges in a graph. Each pair rate represents a weight associated to the associated edge.
+The data we use here consists from exchange rates for pairs of tokens/currencies. These pairs represent relationships between
+the tokens and can be used as edges in a graph. Each pair rate represents a weight associated to a corresponding edge.
 
 The example data we use comes from SwissBorg API (`https://api.swissborg.io/v1/challenge/rates`), and we assume it always returns
 the rates with 8 decimal precision, so each rate is represented in the graph as weights of 10**8 denomination.
