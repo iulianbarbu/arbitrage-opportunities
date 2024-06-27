@@ -22,7 +22,7 @@ the chance of observing an arbitrage opportunity.
 O(V * E) where V is the number of vertices and E the number of edges, but since the pairs rates form a complete multidigraph
 that includes self-vertex loops too (which are ignored in the algorithm), we get E = (V - 1) * V.
 
-**Space complexity** is O(V) coming from the various structures we use to hold the minimum distance to each vertex, th
+**Space complexity** is O(V) coming from the various structures we use to hold the minimum distance to each vertex, the paths of the minimum path.
 
 
 ## A note about SwissBorg
