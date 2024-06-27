@@ -29,15 +29,15 @@ that includes self-vertex loops too (which are ignored in the algorithm), we get
 
 SwissBorg is a crypto wealth management platform that utilizes blockchain technology to provide a secure and transparent place
 for buying, selling, and managing digital assets. A few of the outstanding features are noted bellow:
-- earn yield on their holdings through Smart Earn feature (for a limited set of tokens)
+- earn yield on holdings through Smart Earn feature (for a limited set of tokens)
 - use SwissBorg Earn feature to do the heavy lifting for staking, lending, and yield farming
 - invest in crypto ETF like bundles through Thematics
 - invest in BORG (SwissBorg governance token) to upgrade the plan, where each plan tier provides a set of benefits like smaller
   fees, higher yields and voting rights in governing within SwissBorg ecosystem.
 - find the good liquidity and rates with SwissBorg Exchange Smart Engine (aka Meta-Exchange), which analyzes pairs on multiple
   CEXs, DEXs and foreign exchanges, finding the best route to execute customers orders in milliseconds.
-- use SwissBorg Exchange AI Portfolio Analytics to gain better insights into their portfolios (total fees spent, overall performance,
-  personal ROI for unrealized/realized gains) and the tokens they are interested in, through features like Cyborg Predictor, SwissBorg
+- use SwissBorg Exchange AI Portfolio Analytics to gain better insights into portfolios (total fees spent, overall performance,
+  personal ROI for unrealized/realized gains) and tokens through features like Cyborg Predictor, SwissBorg
   Indicator, Community Sentiment, support and resistance).
 
 ## How to run everything
